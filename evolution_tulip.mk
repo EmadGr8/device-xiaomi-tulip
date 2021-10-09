@@ -8,13 +8,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution-X stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from tulip device
 $(call inherit-product, device/xiaomi/tulip/device.mk)
 
-PRODUCT_NAME := lineage_tulip
+# Device Info
+PRODUCT_NAME := evolution_tulip
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -22,7 +23,11 @@ PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V12.0.1.0.PEKMIXM release-keys"
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
 
-BUILD_FINGERPRINT := xiaomi/tulip/tulip:9/PKQ1.180904.001/V12.0.1.0.PEKMIXM:user/release-keys
+# Evolution-X things
+EVO_BUILD_TYPE := OFFICIAL
+EVO_MAINTAINER := tedomi2705
+
+EVO_SUPPORT_URL := https://t.me/EvolutionXRn6Pro

@@ -1,0 +1,14 @@
+[
+ {
+    "repository" : "tedomi2705/vendor_xiaomi_tulip",
+    "target_path": "vendor/xiaomi/tulip",
+    "remote"     : "github",
+    "revision"   : "tiramisu"
+ },
+ {
+    "repository" : "tedomi2705/kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "remote"     : "github",
+    "revision"   : "tiramisu"
+ }
+]
