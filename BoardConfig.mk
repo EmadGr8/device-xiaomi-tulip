@@ -51,6 +51,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := vendor/xiaomi/sdm660_defconfig
 TARGET_KERNEL_CONFIG += vendor/xiaomi/tulip.config
 TARGET_KERNEL_VERSION := 4.19
+TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
