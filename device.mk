@@ -252,6 +252,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.fingerprint.rc \
     init.qcom.power.rc \
+    fstab.zram \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
