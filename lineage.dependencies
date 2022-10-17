@@ -6,8 +6,8 @@
     "revision"   : "lineage-19.1"
  },
  {
-    "repository" : "arturo51236/vendor_xiaomi_twolip",
-    "target_path": "vendor/xiaomi/twolip",
+    "repository" : "arturo51236/vendor_xiaomi_tulip",
+    "target_path": "vendor/xiaomi/tulip",
     "remote"     : "github",
     "revision"   : "4.19-t-wip"
  },

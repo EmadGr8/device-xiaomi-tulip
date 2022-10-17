@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from twolip device
-$(call inherit-product, device/xiaomi/twolip/device.mk)
+# Inherit from tulip device
+$(call inherit-product, device/xiaomi/tulip/device.mk)
 
-PRODUCT_NAME := lineage_twolip
-PRODUCT_DEVICE := twolip
+PRODUCT_NAME := lineage_tulip
+PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro
