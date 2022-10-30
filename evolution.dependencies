@@ -1,14 +1,32 @@
 [
  {
+    "remote"     : "github",
     "repository" : "tedomi2705/vendor_xiaomi_tulip",
     "target_path": "vendor/xiaomi/tulip",
-    "remote"     : "github",
-    "revision"   : "tiramisu"
+    "branch"     : "tiramisu"
  },
  {
-    "repository" : "tedomi2705/kernel_xiaomi_sdm660",
-    "target_path": "kernel/xiaomi/sdm660",
     "remote"     : "github",
-    "revision"   : "tiramisu"
+    "repository" : "arturo51236/kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch"     : "4.19-t-wip"
+ },
+ {
+    "remote"     : "github",
+    "repository" : "wHo-EM-i/android_hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/sdm660/media",
+    "branch"     : "13-caf_4.19"
+ },
+ {
+    "remote"     : "github",
+    "repository" : "wHo-EM-i/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom-caf/sdm660/audio",
+    "branch"     : "13-caf_4.19"
+ },
+ {
+    "remote"     : "github",
+    "repository" : "wHo-EM-i/android_hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/sdm660/display",
+    "branch"     : "13-caf_4.19"
  }
 ]
