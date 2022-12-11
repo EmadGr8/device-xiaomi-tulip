@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_tulip.mk
+    $(LOCAL_DIR)/lineage_twolip.mk
 
 COMMON_LUNCH_CHOICES := \
     evolution_tulip-user \
