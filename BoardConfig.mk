@@ -8,10 +8,10 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/xiaomi/tulip
+DEVICE_PATH := device/xiaomi/twolip
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := tulip
+TARGET_OTA_ASSERT_DEVICE := tulip,twolip
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
@@ -49,7 +49,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := tulip_defconfig
+TARGET_KERNEL_CONFIG := twolip_defconfig
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_CROSS_COMPILE_ARM32_PREFIX := arm-linux-gnueabi-
@@ -112,8 +112,8 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tulip
-TARGET_RECOVERY_DEVICE_MODULES := libinit_tulip
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_twolip
+TARGET_RECOVERY_DEVICE_MODULES := libinit_twolip
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -173,4 +173,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/tulip/BoardConfigVendor.mk
+include vendor/xiaomi/twolip/BoardConfigVendor.mk
